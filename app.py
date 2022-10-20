@@ -59,22 +59,22 @@ async def scoring_endpoint(item: Input):
 
 @app.get('/predict/')
 async def explain(
-    # area: int,
-    # property_type: Literal["APARTMENT", "HOUSE", "OTHERS"], #fsfs
-    # rooms_number: int,
-    # zip_code: int,
-    # land_area: int = None, #Optional[int]
-    # garden: bool = None, #Optional[bool],
-    # garden_area: int = None, #Optional[int],
-    # equipped_kitchen: bool = None, #Optional[bool],
-    # full_address: str = None, #Optional[str],
-    # swimming_pool: bool = None, #Optional[bool],
-    # furnished: bool = None, #Optional[bool],
-    # open_fire: bool = None, #Optional[bool],
-    # terrace: bool = None, #Optional[bool],
-    # terrace_area: int = None, #Optional[int],
-    # facades_number: int = None, #Optional[int],
-    # building_state: Literal["NEW", "GOOD", "TO RENOVATE", "JUST RENOVATED", "TO REBUILD"] = None,
+    area: int,
+    property_type: Literal["APARTMENT", "HOUSE", "OTHERS"],
+    rooms_number: int,
+    zip_code: int,
+    land_area: int = None, #Optional[int]
+    garden: bool = None, #Optional[bool],
+    garden_area: int = None, #Optional[int],
+    equipped_kitchen: bool = None, #Optional[bool],
+    full_address: str = None, #Optional[str],
+    swimming_pool: bool = None, #Optional[bool],
+    furnished: bool = None, #Optional[bool],
+    open_fire: bool = None, #Optional[bool],
+    terrace: bool = None, #Optional[bool],
+    terrace_area: int = None, #Optional[int],
+    facades_number: int = None, #Optional[int],
+    building_state: Literal["NEW", "GOOD", "TO RENOVATE", "JUST RENOVATED", "TO REBUILD"] = None,
 ):
     
     """
