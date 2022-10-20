@@ -115,7 +115,7 @@ def preprocess(element):
         'number_of_facades': element.data.facades_number if element.data.facades_number is not None else 1 if element.data.property_type == 'APARTMENT' else 2,
         'swimming_pool': 1 if element.data.swimming_pool == True else 0,
         'state_of_the_building': state_of_the_building_dict[element.data.building_state] if element.data.building_state is not None else 0.87252,
-        'zip_code_ratio': zip_code_dict_xx['be_zip_'+str(element.data.zip_code)[:2]] if int(element.data.zip_code)[:2] >= 10 else 1,
+        'zip_code_ratio': zip_code_dict_xx['be_zip_'+str(element.data.zip_code)[:2]] if int((element.data.zip_code)[:2]) >= 10 else 1,
         'HOUSE': 1 if element.data.property_type == 'HOUSE' else 0,
         'APARTMENT': 1 if element.data.property_type == 'APARTMENT' else 0
         }
